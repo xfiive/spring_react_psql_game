@@ -1,0 +1,57 @@
+.App {
+    text-align: center;
+    /*background: url('./main-menu.png') no-repeat center center fixed;*/
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.App-header h1 {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    transition: transform 0.2s;
+}
+
+.menu-button:active {
+    transform: scale(0.98);
+}
+
+.two-players {
+    top: 40%;
+    left: 20%;
+}
+
+.settings {
+    top: 60%;
+    left: 20%;
+}
+
+.fireplace-text {
+    color: ivory;
+    font-family: 'Times New Roman', serif;
+    letter-spacing: 5px;
+    text-shadow:
+            3px 3px 0px rgba(0,0,0,0.2),
+            6px 6px 0px rgba(0,0,0,0.15),
+            9px 9px 0px rgba(0,0,0,0.1),
+            12px 12px 0px rgba(0,0,0,0.05);
+    font-size: 48px;
+    margin: 0;
+}

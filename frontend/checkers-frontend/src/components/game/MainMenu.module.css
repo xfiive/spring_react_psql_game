@@ -1,0 +1,173 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floatingText {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+.title {
+    color: #1e2761;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 10px #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #4d90fe, 0 0 30px #4d90fe, 0 0 40px #4d90fe;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #4e9ff3, 0 0 40px #4e9ff3, 0 0 50px #4e9ff3;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    z-index: 2;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.menuCard {
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    z-index: 2;
+    animation: typingEffect 1.5s steps(30) 1s forwards, blinkCursor 0.75s step-end infinite;
+}
+
+.formCard {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #462865;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.error {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 2;
+}
+
+.background {
+    background: linear-gradient(to right bottom, #000413, #1e2761, #2b2f5b, #462865);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+.error.show {
+    max-height: 50px;
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.menuCard:hover {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255);
+}
+
+.title {
+    animation: typingEffect 1.5s steps(30) 1s forwards, blinkCursor 0.75s step-end infinite;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    z-index: 2;
+}
+
+.button:hover {
+    background-color: #4d90fe;
+    border-color: #3079ed;
+}
+
+.backButton {
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.backButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.backButton:active {
+    transform: translateY(1px);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+.welcomeMessage {
+    color: ivory;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+    animation: fadeIn 2s ease-out forwards, float 5s ease-in-out infinite;
+}

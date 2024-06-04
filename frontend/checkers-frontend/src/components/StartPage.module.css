@@ -1,0 +1,381 @@
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right bottom, #000413, #1e2761, #2b2f5b, #462865);
+    animation: gradientBG 10s infinite, gradientBG 15s infinite;
+    position: relative;
+    overflow: hidden;
+    background-size: 100% 100%, cover;
+    opacity: 1;
+    z-index: 0;
+}
+
+@keyframes twinkling {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-size: 50px 50px;
+    animation: twinkling 20s linear infinite;
+    opacity: 0.01;
+    z-index: 0;
+}
+
+.star {
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    animation: zoom 3s infinite ease-in-out;
+    z-index: 1;
+}
+
+.signup-stars {
+    background-image: radial-gradient(circle 2px at 5% 10%, #eee, transparent),
+    radial-gradient(circle 2px at 10% 20%, #fff, transparent),
+    radial-gradient(circle 1px at 15% 30%, #ddd, transparent),
+    radial-gradient(circle 2px at 20% 40%, #eee, transparent),
+    radial-gradient(circle 2px at 25% 50%, #fff, transparent),
+    radial-gradient(circle 1px at 30% 60%, #ddd, transparent),
+    radial-gradient(circle 2px at 35% 70%, #eee, transparent),
+    radial-gradient(circle 2px at 40% 80%, #fff, transparent),
+    radial-gradient(circle 1px at 45% 90%, #ddd, transparent),
+    radial-gradient(circle 2px at 50% 100%, #eee, transparent),
+    radial-gradient(circle 2px at 55% 10%, #fff, transparent),
+    radial-gradient(circle 1px at 60% 20%, #ddd, transparent),
+    radial-gradient(circle 2px at 65% 30%, #eee, transparent),
+    radial-gradient(circle 2px at 70% 40%, #fff, transparent),
+    radial-gradient(circle 1px at 75% 50%, #ddd, transparent),
+    radial-gradient(circle 2px at 80% 60%, #eee, transparent),
+    radial-gradient(circle 2px at 85% 70%, #fff, transparent),
+    radial-gradient(circle 1px at 90% 80%, #ddd, transparent),
+    radial-gradient(circle 2px at 95% 90%, #eee, transparent),
+    radial-gradient(circle 2px at 100% 100%, #fff, transparent),
+    radial-gradient(circle 1px at 12% 25%, #ddd, transparent),
+    radial-gradient(circle 2px at 22% 35%, #eee, transparent),
+    radial-gradient(circle 2px at 32% 45%, #fff, transparent),
+    radial-gradient(circle 1px at 42% 55%, #ddd, transparent),
+    radial-gradient(circle 2px at 52% 65%, #eee, transparent),
+    radial-gradient(circle 2px at 62% 75%, #fff, transparent),
+    radial-gradient(circle 1px at 72% 85%, #ddd, transparent),
+    radial-gradient(circle 2px at 82% 95%, #eee, transparent),
+    radial-gradient(circle 2px at 92% 15%, #fff, transparent),
+    radial-gradient(circle 1px at 18% 18%, #ddd, transparent),
+    radial-gradient(circle 2px at 28% 28%, #eee, transparent),
+    radial-gradient(circle 2px at 38% 38%, #fff, transparent),
+    radial-gradient(circle 1px at 48% 48%, #ddd, transparent),
+    radial-gradient(circle 2px at 58% 58%, #eee, transparent),
+    radial-gradient(circle 2px at 68% 68%, #fff, transparent),
+    radial-gradient(circle 1px at 78% 78%, #ddd, transparent),
+    radial-gradient(circle 2px at 88% 88%, #eee, transparent),
+    radial-gradient(circle 2px at 98% 98%, #fff, transparent);
+    background-size: 250px 250px;
+    opacity: 0;
+    animation: zoom 10s infinite;
+    z-index: 1;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.signup-stars:nth-child(6) {
+    background-position: 50% 20%;
+    animation: zoom 10s infinite ease-in-out;
+    animation-delay: 6s;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    25% {
+        opacity: 1.2;
+    }
+    50% {
+        opacity: 1.7;
+    }
+    75% {
+        opacity: 2.2;
+    }
+    100% {
+        transform: scale(3.5);
+        opacity: 0;
+    }
+}
+
+.background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: radial-gradient(circle 1px at 10% 20%, #eee, transparent),
+    radial-gradient(circle 1px at 5% 10%, #eee, transparent),
+    radial-gradient(circle 2px at 5% 10%, #eee, transparent),
+    radial-gradient(circle 2px at 10% 20%, #fff, transparent),
+    radial-gradient(circle 1px at 15% 30%, #ddd, transparent),
+    radial-gradient(circle 2px at 20% 40%, #eee, transparent),
+    radial-gradient(circle 2px at 25% 50%, #fff, transparent),
+    radial-gradient(circle 1px at 30% 60%, #ddd, transparent),
+    radial-gradient(circle 2px at 35% 70%, #eee, transparent),
+    radial-gradient(circle 2px at 40% 80%, #fff, transparent),
+    radial-gradient(circle 1px at 45% 90%, #ddd, transparent),
+    radial-gradient(circle 2px at 50% 100%, #eee, transparent),
+    radial-gradient(circle 2px at 55% 10%, #fff, transparent),
+    radial-gradient(circle 1px at 60% 20%, #ddd, transparent),
+    radial-gradient(circle 2px at 65% 30%, #eee, transparent),
+    radial-gradient(circle 2px at 70% 40%, #fff, transparent),
+    radial-gradient(circle 1px at 75% 50%, #ddd, transparent),
+    radial-gradient(circle 2px at 80% 60%, #eee, transparent),
+    radial-gradient(circle 2px at 85% 70%, #fff, transparent),
+    radial-gradient(circle 1px at 90% 80%, #ddd, transparent),
+    radial-gradient(circle 2px at 95% 90%, #eee, transparent),
+    radial-gradient(circle 2px at 100% 100%, #fff, transparent),
+    radial-gradient(circle 1px at 12% 25%, #ddd, transparent),
+    radial-gradient(circle 2px at 22% 35%, #eee, transparent),
+    radial-gradient(circle 2px at 32% 45%, #fff, transparent),
+    radial-gradient(circle 1px at 42% 55%, #ddd, transparent),
+    radial-gradient(circle 2px at 52% 65%, #eee, transparent),
+    radial-gradient(circle 2px at 62% 75%, #fff, transparent),
+    radial-gradient(circle 1px at 72% 85%, #ddd, transparent),
+    radial-gradient(circle 2px at 82% 95%, #eee, transparent),
+    radial-gradient(circle 2px at 92% 15%, #fff, transparent),
+    radial-gradient(circle 1px at 18% 18%, #ddd, transparent),
+    radial-gradient(circle 2px at 28% 28%, #eee, transparent),
+    radial-gradient(circle 2px at 38% 38%, #fff, transparent),
+    radial-gradient(circle 1px at 48% 48%, #ddd, transparent),
+    radial-gradient(circle 2px at 58% 58%, #eee, transparent),
+    radial-gradient(circle 2px at 68% 68%, #fff, transparent),
+    radial-gradient(circle 1px at 78% 78%, #ddd, transparent),
+    radial-gradient(circle 2px at 88% 88%, #eee, transparent),
+    radial-gradient(circle 2px at 98% 98%, #fff, transparent);
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+    animation: zoom 10s infinite ease-in-out;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+@keyframes drift {
+    from {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    to {
+        transform: translate(-50% -100px, -50% -100px) scale(1.5);
+    }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.2s both;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.menuButton {
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4d90fe;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.menuButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+
+.menuButton:hover, .menuButton:focus {
+    background-color: #3079ed;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4);
+}
+
+.menuButton:hover::before, .menu-button:focus::before {
+    opacity: 1;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px #546c80;
+    }
+    50% {
+        box-shadow: 0 0 20px #9ecaed;
+    }
+}
+
+.menuButton:hover {
+    animation: glow 2s infinite alternate;
+}
+
+.menuButton {
+    padding: 15px 30px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #4d90fe;
+    color: white;
+    z-index: 2;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+    user-select: none;
+}
+
+.menuButton:hover, .menuButton:focus {
+    background-color: #3079ed;
+    transform: translateY(-5px);
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.menuButton:active {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.5);
+}
+
+.menuButton::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 50%;
+    transform: scale(1, 1) translate(-50%);
+    z-index: 2;
+    transform-origin: 50% 50%;
+    transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menuButton:hover::before, .menuButton:focus::before {
+    opacity: 1;
+    z-index: 2;
+    width: 300%;
+    height: 300%;
+    transform: scale(0, 0) translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, opacity 0.6s ease, transform 0.6s ease;
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px #9ecaed, 0 0 10px #9ecaed, 0 0 15px #9ecaed;
+    }
+    50% {
+        box-shadow: 0 0 15px #9ecaed, 0 0 20px #9ecaed, 0 0 25px #9ecaed;
+    }
+}
+
+.menuButton:hover {
+    animation: glow 2s infinite alternate;
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+}
+
+
+.menuButton {
+    animation: float 6s ease-in-out infinite;
+    z-index: 2;
+}
+
+
+.menuButton:active {
+    animation: none;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.5);
+}

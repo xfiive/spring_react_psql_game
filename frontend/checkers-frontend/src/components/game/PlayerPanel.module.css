@@ -1,0 +1,38 @@
+.playerPanel {
+    background: #161b22;
+    color: #c9d1d9;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+}
+
+.inputContainer {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input, select {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #c9d1d9;
+    background-color: #0d1117;
+}
+
+button {
+    min-width: 100px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #238636;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}

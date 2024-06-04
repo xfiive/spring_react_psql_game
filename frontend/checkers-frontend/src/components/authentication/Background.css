@@ -1,0 +1,300 @@
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    25% {
+        opacity: 1.2;
+    }
+    50% {
+        opacity: 1.7;
+    }
+    75% {
+        opacity: 2.2;
+    }
+    100% {
+        transform: scale(3.5);
+        opacity: 0;
+    }
+}
+
+.Background {
+    background: linear-gradient(to right bottom, #000309, #191f50, #2b2f5b, #502e75);
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.Background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: radial-gradient(circle 2px at 10% 20%, #eee, transparent),
+    radial-gradient(circle 2px at 5% 10%, #eee, transparent),
+    radial-gradient(circle 2px at 10% 20%, #fff, transparent),
+    radial-gradient(circle 1px at 15% 30%, #ddd, transparent),
+    radial-gradient(circle 2px at 20% 40%, #eee, transparent),
+    radial-gradient(circle 2px at 25% 50%, #fff, transparent),
+    radial-gradient(circle 1px at 30% 60%, #ddd, transparent),
+    radial-gradient(circle 2px at 35% 70%, #eee, transparent),
+    radial-gradient(circle 2px at 40% 80%, #fff, transparent),
+    radial-gradient(circle 1px at 45% 90%, #ddd, transparent),
+    radial-gradient(circle 2px at 50% 100%, #eee, transparent),
+    radial-gradient(circle 2px at 55% 10%, #fff, transparent),
+    radial-gradient(circle 1px at 60% 20%, #ddd, transparent),
+    radial-gradient(circle 2px at 65% 30%, #eee, transparent),
+    radial-gradient(circle 2px at 70% 40%, #fff, transparent),
+    radial-gradient(circle 1px at 75% 50%, #ddd, transparent),
+    radial-gradient(circle 2px at 80% 60%, #eee, transparent),
+    radial-gradient(circle 2px at 85% 70%, #fff, transparent),
+    radial-gradient(circle 1px at 90% 80%, #ddd, transparent),
+    radial-gradient(circle 2px at 95% 90%, #eee, transparent),
+    radial-gradient(circle 2px at 100% 100%, #fff, transparent),
+    radial-gradient(circle 1px at 12% 25%, #ddd, transparent),
+    radial-gradient(circle 2px at 22% 35%, #eee, transparent),
+    radial-gradient(circle 2px at 32% 45%, #fff, transparent),
+    radial-gradient(circle 1px at 42% 55%, #ddd, transparent),
+    radial-gradient(circle 2px at 52% 65%, #eee, transparent),
+    radial-gradient(circle 2px at 62% 75%, #fff, transparent),
+    radial-gradient(circle 1px at 72% 85%, #ddd, transparent),
+    radial-gradient(circle 2px at 82% 95%, #eee, transparent),
+    radial-gradient(circle 2px at 92% 15%, #fff, transparent),
+    radial-gradient(circle 1px at 18% 18%, #ddd, transparent),
+    radial-gradient(circle 2px at 28% 28%, #eee, transparent),
+    radial-gradient(circle 2px at 38% 38%, #fff, transparent),
+    radial-gradient(circle 1px at 48% 48%, #ddd, transparent),
+    radial-gradient(circle 2px at 58% 58%, #eee, transparent),
+    radial-gradient(circle 2px at 68% 68%, #fff, transparent),
+    radial-gradient(circle 1px at 78% 78%, #ddd, transparent),
+    radial-gradient(circle 2px at 88% 88%, #eee, transparent),
+    radial-gradient(circle 2px at 98% 98%, #fff, transparent);
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+    animation: zoom 10s infinite ease-in-out;
+    opacity: 0.5;
+    z-index: 0;
+    pointer-events: none;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.background::before {
+    pointer-events: none;
+}
+
+.signup-stars:nth-child(6) {
+    background-position: 50% 20%;
+    animation-delay: 6s;
+}
+
+.star:nth-child(1) {
+    top: 77%;
+    left: 16%;
+}
+
+.star:nth-child(2) {
+    top: 93%;
+    left: 26%;
+}
+
+.star:nth-child(3) {
+    top: 71%;
+    left: 49%;
+}
+
+.star:nth-child(4) {
+    top: 48%;
+    left: 39%;
+}
+
+.star:nth-child(5) {
+    top: 16%;
+    left: 85%;
+}
+
+.star:nth-child(6) {
+    top: 98%;
+    left: 92%;
+}
+
+.star:nth-child(7) {
+    top: 95%;
+    left: 67%;
+}
+
+.star:nth-child(8) {
+    top: 63%;
+    left: 91%;
+}
+
+.star:nth-child(9) {
+    top: 13%;
+    left: 43%;
+}
+
+.star:nth-child(10) {
+    top: 10%;
+    left: 73%;
+}
+
+.star:nth-child(11) {
+    top: 12%;
+    left: 80%;
+}
+
+.star:nth-child(12) {
+    top: 12%;
+    left: 90%;
+}
+
+.star:nth-child(13) {
+    top: 85%;
+    left: 71%;
+}
+
+.star:nth-child(14) {
+    top: 26%;
+    left: 7%;
+}
+
+.star:nth-child(15) {
+    top: 73%;
+    left: 64%;
+}
+
+.star:nth-child(16) {
+    top: 7%;
+    left: 77%;
+}
+
+.star:nth-child(17) {
+    top: 64%;
+    left: 77%;
+}
+
+.star:nth-child(18) {
+    top: 99%;
+    left: 91%;
+}
+
+.star:nth-child(19) {
+    top: 83%;
+    left: 62%;
+}
+
+.star:nth-child(20) {
+    top: 72%;
+    left: 61%;
+}
+
+.star:nth-child(21) {
+    top: 6%;
+    left: 30%;
+}
+
+.star:nth-child(22) {
+    top: 70%;
+    left: 85%;
+}
+
+.star:nth-child(23) {
+    top: 26%;
+    left: 93%;
+}
+
+.star:nth-child(24) {
+    top: 32%;
+    left: 33%;
+}
+
+.star:nth-child(25) {
+    top: 46%;
+    left: 19%;
+}
+
+.star:nth-child(26) {
+    top: 63%;
+    left: 67%;
+}
+
+.star:nth-child(27) {
+    top: 31%;
+    left: 44%;
+}
+
+.star:nth-child(28) {
+    top: 71%;
+    left: 7%;
+}
+
+.star:nth-child(29) {
+    top: 20%;
+    left: 55%;
+}
+
+.star:nth-child(30) {
+    top: 64%;
+    left: 58%;
+}
+
+
+.star {
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    animation: zoom 3s infinite ease-in-out;
+    z-index: 1;
+}
+
+.signup-stars {
+    background-image: radial-gradient(circle 2px at 5% 10%, #eee, transparent),
+    radial-gradient(circle 2px at 10% 20%, #fff, transparent),
+    radial-gradient(circle 1px at 15% 30%, #ddd, transparent),
+    radial-gradient(circle 2px at 20% 40%, #eee, transparent),
+    radial-gradient(circle 2px at 25% 50%, #fff, transparent),
+    radial-gradient(circle 1px at 30% 60%, #ddd, transparent),
+    radial-gradient(circle 2px at 35% 70%, #eee, transparent),
+    radial-gradient(circle 2px at 40% 80%, #fff, transparent),
+    radial-gradient(circle 1px at 45% 90%, #ddd, transparent),
+    radial-gradient(circle 2px at 50% 100%, #eee, transparent),
+    radial-gradient(circle 2px at 55% 10%, #fff, transparent),
+    radial-gradient(circle 1px at 60% 20%, #ddd, transparent),
+    radial-gradient(circle 2px at 65% 30%, #eee, transparent),
+    radial-gradient(circle 2px at 70% 40%, #fff, transparent),
+    radial-gradient(circle 1px at 75% 50%, #ddd, transparent),
+    radial-gradient(circle 2px at 80% 60%, #eee, transparent),
+    radial-gradient(circle 2px at 85% 70%, #fff, transparent),
+    radial-gradient(circle 1px at 90% 80%, #ddd, transparent),
+    radial-gradient(circle 2px at 95% 90%, #eee, transparent),
+    radial-gradient(circle 2px at 100% 100%, #fff, transparent),
+    radial-gradient(circle 1px at 12% 25%, #ddd, transparent),
+    radial-gradient(circle 2px at 22% 35%, #eee, transparent),
+    radial-gradient(circle 2px at 32% 45%, #fff, transparent),
+    radial-gradient(circle 1px at 42% 55%, #ddd, transparent),
+    radial-gradient(circle 2px at 52% 65%, #eee, transparent),
+    radial-gradient(circle 2px at 62% 75%, #fff, transparent),
+    radial-gradient(circle 1px at 72% 85%, #ddd, transparent),
+    radial-gradient(circle 2px at 82% 95%, #eee, transparent),
+    radial-gradient(circle 2px at 92% 15%, #fff, transparent),
+    radial-gradient(circle 1px at 18% 18%, #ddd, transparent),
+    radial-gradient(circle 2px at 28% 28%, #eee, transparent),
+    radial-gradient(circle 2px at 38% 38%, #fff, transparent),
+    radial-gradient(circle 1px at 48% 48%, #ddd, transparent),
+    radial-gradient(circle 2px at 58% 58%, #eee, transparent),
+    radial-gradient(circle 2px at 68% 68%, #fff, transparent),
+    radial-gradient(circle 1px at 78% 78%, #ddd, transparent),
+    radial-gradient(circle 2px at 88% 88%, #eee, transparent),
+    radial-gradient(circle 2px at 98% 98%, #fff, transparent);
+    background-size: 250px 250px;
+    opacity: 0;
+    animation: zoom 10s infinite;
+    z-index: 1;
+}
