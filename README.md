@@ -1,3 +1,8 @@
+In short, project reprensents small school game Checkers based on the logics of the rules of Russian Checkers.
+
+Backend - Spring boot
+Frontend - React.js
+
 In order to add a functioning music player to the game you will need to do the following:
 
 1) Download those tracks that you consider necessary and place them in the folder at ‘frontend/checkers-frontend/public/music’, adding your tracks to the ‘music’ folder.
